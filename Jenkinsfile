@@ -9,13 +9,13 @@ pipeline {
     stages {
         stage('Download the dependencies') {
             steps {
-                sh "npm install"
+                sh 'npm install'
             }
         }
 
         stage('Build and test') {
             steps {
-                sh "npm run build:and:test"
+                sh 'npm run build:and:test'
             }
         }
     }
